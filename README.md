@@ -1,30 +1,34 @@
-# React + TypeScript + Vite
+# Makers Tech ChatBot API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend application that interacts with the Makers Tech ChatBot API to provide a chatbot service using the OpenAI Assistant API. The application is built with React and Vite using Typescript.
 
-Currently, two official plugins are available:
+## Requirements
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Node.js v20.0.0 or higher
+- Makers Tech ChatBot API URL
 
-## Expanding the ESLint configuration
+## Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository.
+2. Run `yarn install` to install the dependencies.
+3. Copy the `.env.template` file to `.env` and fill in the required environment variables.
+4. Run `yarn dev` to start the application in development mode.
 
-- Configure the top-level `parserOptions` property like this:
+## Usage
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+The application will be available at `http://localhost:5173`. You can interact with the chatbot by sending messages in the input field at the bottom of the screen.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Observations
+
+- The application is a frontend application that interacts with the Makers Tech ChatBot API.
+- The application uses the Makers Tech ChatBot API to provide chatbot services.
+- The assistant is able to give information about all items, a specific item, recommend items based on a user's preferences and so on.
+- The project has committ linting using Husky, so make sure to follow the conventional commit message format. You can find more information about it [here](https://www.conventionalcommits.org/en/v1.0.0/).
+
+## Author and acknowledgment
+
+- The code was developed by [Bryan Tapia](https://github.com/Brynta2001) using Vite and the [Makers Tech ChatBot API](https://github.com/Brynta2001/makers-chatbot-backend). Additionally, the project was developed as part of the Makers Tech ChatBot project using the Fernando Herrera's [OpenAI course](https://cursos.devtalles.com/courses/openai).
+
+## License
+
+Copyright (c) 2023 Bryan Tapia. This project is [MIT licensed](LICENSE).
